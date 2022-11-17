@@ -16,7 +16,7 @@
     상품상세
     <span class="right_area"></span>
   </div>
-  <div class="page_wrap">
+  <div class="page_wrap od">
     <div class="od_wrap">
       <h5>주문상품정보</h5>
       <div class="od_cont">
@@ -47,12 +47,28 @@
             <th>할인금액</th>
             <td class="pdo_discount_price">400원</td>
           </tr>
-          <tr class="pdo_for_border">
-            <th>총 주문 금액</th>
-            <td class="pdo_all_price">4,000원</td>
-          </tr>
         </table>
+        <ul class="pdo_for_border clearfix">
+          <li>총 주문금</li>
+          <li>4,000원</li>
+        </ul>
         <h4>결제 방법</h4>
+        <ul class="how_pay clearfix">
+          <li>
+            <input type="radio" name="how_pay" id="card">
+            <label for="card">카드결제</label>
+          </li>
+          <li>
+            <input type="radio" name="how_pay" id="phone">
+            <label for="phone">핸드폰 결제</label>
+          </li>
+          <li>
+            <input type="radio" name="how_pay" id="bank">
+            <label for="bank">계좌이체</label>
+          </li>
+        </ul>
+        <label for="pay_agree" class="pay_agree_area"><input type="checkbox" name="" id="pay_agree" class="custom_chk"> 상품의 구매 조건 확인, 결제진행에 동의합니다.</label>
+        <a href="" class="purple_btn go_payment">결제하기</a>
       </div>
     </div>
   </div>
