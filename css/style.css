@@ -681,5 +681,3 @@ input[type="checkbox"].custom_chk:after{
 input[type="checkbox"].custom_chk:checked:after{
     background: url(../img/check_on.png) no-repeat;
 }
-
-i
