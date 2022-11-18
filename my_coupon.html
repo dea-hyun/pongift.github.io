@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sojin.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="no_position">
+    <div class="hd_title">
+      <h3>
+        <span class="left_area"></span>
+         내쿠폰
+        <span class="right_area"></span>
+      </h3>
+    </div> 
+  </header>
+  <div class="page_cont">
+    <ul class="tabs clearfix">
+      <li class="tab-link current" data-tab="tab-1">사용가능</li>
+      <li class="tab-link" data-tab="tab-2">사용완료</li>
+    </ul>
+  
+    <div id="tab-1" class="tab-content current">
+      <div class="pdo_info">
+        <ul>
+          <li>
+            <div class="img_area">
+              <img src="img/prod_option.png">
+              <span class="dday_coupon">D-19</span>
+            </div>
+          </li>
+          <li class="info_area">
+            <p class="pdo_brand">스타벅스(브랜드명)</p>
+            <h5>아메리카노 Tall Size</h5>
+            <p class="pdo_period">2023.01.09 (유효기간)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pdo_info">
+        <ul>
+          <li>
+            <div class="img_area">
+              <img src="img/prod_img.png">
+              <span class="dday_coupon">D-19</span>
+            </div>
+          </li>
+          <li class="info_area">
+            <p class="pdo_brand">스타벅스(브랜드명)</p>
+            <h5>아메리카노 Tall Size</h5>
+            <p class="pdo_period">2023.01.09 (유효기간)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pdo_info">
+        <ul>
+          <li>
+            <div class="img_area">
+              <img src="img/prod_option.png">
+              <span class="dday_coupon">D-19</span>
+            </div>
+          </li>
+          <li class="info_area">
+            <p class="pdo_brand">스타벅스(브랜드명)</p>
+            <h5>아메리카노 Tall Size</h5>
+            <p class="pdo_period">2023.01.09 (유효기간)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="tab-2" class="tab-content">
+      <div class="pdo_info">
+        <ul>
+          <li>
+            <div class="img_area">
+              <img src="img/prod_option.png">
+            </div>
+          </li>
+          <li class="info_area">
+            <p class="pdo_brand">스타벅스(브랜드명)1</p>
+            <h5>아메리11카노 Tall Si11ze</h5>
+            <p class="pdo_period">2023.01.09 (유효기간)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pdo_info">
+        <ul>
+          <li>
+            <div class="img_area">
+              <img src="img/prod_option.png">
+            </div>
+          </li>
+          <li class="info_area">
+            <p class="pdo_brand">스타벅스(브랜드명)1</p>
+            <h5>아메리카11노 Tall Size</h5>
+            <p class="pdo_period">2023.0111.09 (유효기간)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pdo_info">
+        <ul>
+          <li>
+            <div class="img_area">
+              <img src="img/prod_option.png">
+            </div>
+          </li>
+          <li class="info_area">
+            <p class="pdo_brand">스타벅스(브랜드명)1</p>
+            <h5>아메리카노11 Tall Size</h5>
+            <p class="pdo_period">2023.01.0911 (유효기간)</p>
+          </li>
+        </ul>
+      </div>
+    </div><!--pdo_info-->
+    <h4 class="cont_tit">유의사항</h4>
+    <label for="before_certifi">
+      <input type="checkbox" name="" id="before_certifi" class="custom_chk">
+      반드시 사용 전 상품권을 인증하세요
+    </label>
+    <div class="my_coupon_info">
+      <p>반드시 사용 전 상품권을 인증하세요!</p>
+      <div class="closed_wrap">
+        <div class="mc_closed_btn"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+  
+      $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+      })
+
+    })
+  </script>
+</body>
+</html>
