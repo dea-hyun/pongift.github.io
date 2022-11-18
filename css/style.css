@@ -729,6 +729,9 @@ a{
     width: 100%;
     padding: 40px 3% 0;
 }
+<<<<<<< HEAD
+}
+=======
 }
 
 /* 체크박스 보라색 버튼 커스텀 */
@@ -754,3 +757,4 @@ input[type="checkbox"].custom_chk:checked:after{
     background: url(../img/check_on.png) no-repeat;
 }
 /* 체크박스 보라색 버튼 커스텀 */
+>>>>>>> origin/main
