@@ -153,6 +153,20 @@
   padding-left: 15px;
   vertical-align: middle;
 }
+.pdo_info .img_area{
+  position: relative;
+  border-radius: 15px;
+}
+.pdo_info .img_area .dday_coupon{
+  position: absolute;
+  background-color: #fff;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  border-radius: 15px 0 0 0;
+  padding: 5px 20px;
+  box-shadow: 2px 1px 5px -2px #000;
+}
 .pdo_info .info_area .pdo_brand{
   font-size: 0.86em;
 }
