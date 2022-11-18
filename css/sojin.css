@@ -1,5 +1,4 @@
 .mini_head{
-<<<<<<< HEAD
     width: 100%;
     text-align: center;
     font-size: 1.71em;
@@ -203,18 +202,13 @@
     border-radius: 30px;
     padding: 17px 0;
     margin-top: 38px;
+    font-size: 1.71em;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
   }
-=======
-  width: 100%;
-  text-align: center;
-  font-size: 1.71em;
-  height: 60px;
-  line-height: 60px;
-  position: relative;
-  position: fixed;
-  background-color: #fff;
-  z-index: 1;
-}
 .mini_head span{
 position: absolute;
 top: 50%;
@@ -489,4 +483,3 @@ color: #9F14FF;
 margin-top: 20px;
 font-size: 15px;
 }
->>>>>>> origin/main
