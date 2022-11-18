@@ -249,6 +249,7 @@ a{
     display: flex;
     align-items: center;
     box-sizing: var(--box-shadow);
+    background: ver(--white);
 }
 
 .header .search-form.active{
