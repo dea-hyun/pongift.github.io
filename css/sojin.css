@@ -155,131 +155,240 @@ width: 100px;
 padding-left: 15px;
 vertical-align: middle;
 }
+.pdo_info ul .img_area{
+  border-radius: 15px;
+  position: relative;
+}
+.pdo_info ul .img_area .dday_coupon{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 15px 0px 0px 0px;
+  left: 0;
+  padding: 4px 12px;
+  font-weight: bold;
+  box-shadow: 1px 3px 8px -3px #000;
+}
 .pdo_info .info_area .pdo_brand{
-font-size: 0.86em;
+  font-size: 0.86em;
 }
 .pdo_info .info_area h5{
-font-size: 1.43em;
-font-weight: bold;
-margin-top: 5px;
+  font-size: 1.43em;
+  font-weight: bold;
+  margin-top: 5px;
 }
 .pdo_info .info_area .pdo_period{
-font-size: 1.14em;
-margin-top: 15px;
+  font-size: 1.14em;
+  margin-top: 15px;
 }
 
 .prod_option table tr > *{
-padding: 15px 0;
+  padding: 15px 0;
 }
 .prod_option table th{
-text-align: left;
-font-weight: 500;
+  text-align: left;
+  font-weight: 500;
 }
 .prod_option table td{
-font-size: 0.86em;
-text-align: right;
+  font-size: 0.86em;
+  text-align: right;
 }
 .prod_option table .pdo_all_price{
-font-weight: bold;
-font-size: 1.38em;
+  font-weight: bold;
+  font-size: 1.38em;
 }
 .prod_option table .addr_book{
-padding-right: 20px;
-background: url(../img/b_right_arrow.png) no-repeat right;
+  padding-right: 20px;
+  background: url(../img/b_right_arrow.png) no-repeat right;
 
 }
 .prod_option table .plus_img{
-padding-right: 20px;
-background: url(../img/prod_plus.png) no-repeat right;
+  padding-right: 20px;
+  background: url(../img/prod_plus.png) no-repeat right;
 }
 .prod_option table .minus_img{
-background: url(../img/prod_minus.png) no-repeat right;
+  background: url(../img/prod_minus.png) no-repeat right;
 }
 .prod_option .go_gift{
-display: block;
-width: 100%;
-text-align: center;
-border-radius: 30px;
-padding: 17px 0;
-margin-top: 38px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
+  padding: 17px 0;
+  margin-top: 38px;
 }
 
 .page_wrap.od{
-background: #fdfbfa;
+  background: #fdfbfa;
 }
 .od_wrap{padding-top: 20px;}
 .od_wrap h5{
-font-size: 20px;
-font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 .od_wrap .od_cont{
-background-color: #fff;
-padding: 20px 0;
-margin-top: 20px;
+  background-color: #fff;
+  padding: 20px 0;
+  margin-top: 20px;
 }
 .od_wrap .od_cont .pdo_info ul{margin: 0;}
 .go_payment{
-display: block;
-border-radius: 25px;
-text-align: center;
-margin-top: 80px;
+  display: block;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 80px;
 }
 .od_cont table{
-margin-top: 50px;
+  margin-top: 50px;
 }
 .od_cont table th{
-text-align: left;
-font-weight: normal;
-font-size: 18px;
-padding: 5px 0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 5px 0;
 }
 .od_cont table td{
-text-align: right;
+  text-align: right;
 }
 
 .pdo_for_border{  
-border-top: 1px solid #d9d9d9;
-padding: 0;
+  border-top: 1px solid #d9d9d9;
+  padding: 0;
 }
 .pdo_for_border li{
-float: left;
-padding: 10px 0;
-width: 70%;
-font-size: 18px;
+  float: left;
+  padding: 10px 0;
+  width: 70%;
+  font-size: 18px;
 }
 .pdo_for_border li:last-child{
-width: 30%;
-text-align: right;
-font-weight: bold;
-font-size: 28px;
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .how_pay input[type="radio"]{
-display: none;
+  display: none;
 }
 .how_pay{
-padding: 0;
-margin-left: -10px;
+  padding: 0;
+  margin-left: -10px;
 }
 .how_pay li{
-float: left;
-width: 33%;
-padding-left: 10px;
+  float: left;
+  width: 33%;
+  padding-left: 10px;
 }
 .how_pay label{
-display: block;
-background-color: #fff;
-border: 1px solid #d9d9d9;
-padding: 12px;
-text-align: center;
-border-radius: 50px;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50px;
 }
 .how_pay input[type="radio"]:checked + label{
-border: 1px solid #9F14FF ;
-color: #9F14FF;
+  border: 1px solid #9F14FF ;
+  color: #9F14FF;
 }
 
 .pay_agree_area{
-margin-top: 20px;
-font-size: 15px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.cont_tit{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.8em 0 ;
+}
+/* 내쿠폰 */
+header.no_position{
+  position: initial;
+}
+.hd_title{
+  padding-top: 44px;
+}
+.hd_title h3{
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+.hd_title span{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+.hd_title .left_area{
+  left: 28px;
+  background: url(../img/head_left_arrow_white.png) no-repeat;
+}
+.hd_title .right_area{
+  right: 28px;
+  background: url(../img/head_closed_white.png) no-repeat;
+}
+
+.page_cont{
+  width: 92%;
+  padding: 20px 15px 40px;
+  margin: -73px auto 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 30px 30px 0px 0px;
+}
+.my_coupon_info{
+  margin-top: 20px;
+  position: relative;
+}
+.my_coupon_info p{
+  width: 100%;
+  background-color: #d9d9d9;
+  text-align: center;
+  font-size: 15px;
+  padding: 17px 0;
+  border-radius: 9px;
+  position: absolute;
+  animation: bounce 1s linear 0s infinite alternate;
+}
+.my_coupon_info p::before{
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  background-color: #d9d9d9;
+}
+.my_coupon_info .closed_wrap{
+  padding-top: 80px;
+}
+.my_coupon_info .mc_closed_btn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0px auto;
+  background-color: #fff;
+  background-image: url(../img/bg_closed.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #DFE2E5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes bounce{
+  0% {
+   top: 20px;
+  }
+  50% {
+   top: 10px;
+  }
+  100% {
+   top: 20px;
+  }
 }
