@@ -129,6 +129,147 @@
             </div>
           <!-- contants end -->
 
+         <!-- contants_s1 slider start -->
+         <div class="contants_s1 wrap ">
+            <div class="swiper-container contants_s1">
+              <h5>이달의 핫이슈</h5>
+              <div class="swiper-wrapper contants_s1">
+                  <div class="swiper-slide contants_s1">
+                     <img src="img/main_slide04.png">
+                     <div class="contants_s1 txt">
+                        <p>스타벅스</p>
+                        <h3>아메리카노 Tall Size</h3> 
+                        <p>아메리카노 Tall Size</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide contants_s1">
+                     <img src="img/main_slide05.png">
+                     <div class="contants_s1 txt">
+                        <p>스타벅스</p>
+                        <h3>아메리카노 Tall Size</h3> 
+                        <p>아메리카노 Tall Size</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide contants_s1">
+                     <img src="img/main_slide06.png">
+                     <div class="contants_s1 txt">
+                        <p>스타벅스</p>
+                        <h3>아메리카노 Tall Size</h3> 
+                        <p>아메리카노 Tall Size</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+
+         <!-- <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div> -->
+
+         <!-- <div class="swiper-scrollbar"></div> -->
+
+         <script>
+            var ponGift_Swiper = new Swiper ('.swiper-container', {
+               direction:'horizontal',
+               loop:true,
+               slidesPerView : 'auto',
+               spaceBetween : 10,
+               loop:true,
+
+               pagination: {
+                  el:'.swiper-pagination',
+                  type:'bullets',
+               },
+
+               navigation: {
+                  nextEl:'.swiper-button-next',
+                  prevEl:'.swiper-button-prev',
+               },
+
+               scrollbar:{
+                  el:'.swiper-scrollbar',
+                  draggable:true,
+               },
+               autoplay:{
+                  delay:2000,
+               }
+            });
+         </script>
+         <!-- contants_s1 slider end -->
+
+          <!--contants_s2 slider start-->
+          <h5>가격대별 상품</h5>
+          <div class="swiper-container snbSwiper contants_s2" style="max-width:420px">
+            <div class="swiper-wrapper contants_s2">
+                <div class="swiper-slide contants_s2"><a href="#"><span class="text">1만원 미만</span></a></div>
+                <div class="swiper-slide contants_s2"><a href="#"><span class="text">1~2만원대</span></a></div>
+                <div class="swiper-slide contants_s2"><a href="#"><span class="text">3~4만원대</span></a></div>
+                <div class="swiper-slide contants_s2"><a href="#"><span class="text">5만원이상</span></a></div>
+            </div>
+        </div>
+        <div class="page_wrap ">
+         <div class="od_wrap">
+           <h5>주문상품정보</h5>
+           <div class="od_cont">
+             <div class="pdo_info">
+               <ul>
+                 <li>
+                   <div class="img_area">
+                     <img src="img/prod_option.png">
+                   </div>
+                 </li>
+                 <li class="info_area">
+                   <p class="pdo_brand">스타벅스(브랜드명)</p>
+                   <h5>아메리카노 Tall Size</h5>
+                   <p class="pdo_period">2023.01.09 (유효기간)</p>
+                 </li>
+               </ul>
+             </div>
+             <button class="page_wrap_button active">더보기</button>
+         </div>
+         
+        <script>
+          var swiper = new Swiper('.snbSwiper', {
+            slidesPerView: 'auto',
+            preventClicks: true,
+            preventClicksPropagation: false,
+            observer: true,
+            observeParents: true
+        });
+        var $snbSwiperItem = $('.snbSwiper.contants_s2 .swiper-wrapper.contants_s2 .swiper-slide.contants_s2 a');
+        $snbSwiperItem.click(function(){
+            var target = $(this).parent();
+            $snbSwiperItem.parent().removeClass('on')
+            target.addClass('on');
+            muCenter(target);
+        })
+
+        function muCenter(target){
+            var snbwrap = $('.snbSwiper.contants_s2 .swiper-wrapper.contants_s2');
+            var targetPos = target.position();
+            var box = $('.snbSwiper.contants_s2');
+            var boxHarf = box.width()/2;
+            var pos;
+            var listWidth=0;
+            
+            snbwrap.find('.swiper-slide.contants_s2').each(function(){ listWidth += $(this).outerWidth(); })
+            
+            var selectTargetPos = targetPos.left + target.outerWidth()/2;
+            if (selectTargetPos <= boxHarf) { // left
+                pos = 0;
+            }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+                pos = listWidth-box.width();
+            }else {
+                pos = selectTargetPos - boxHarf;
+            }
+            
+            setTimeout(function(){snbwrap.css({
+                "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
+                "transition-duration": "500ms"
+            })}, 200);
+        }
+        </script>
+          <!--contants_s2 slider end-->
 
 
 
