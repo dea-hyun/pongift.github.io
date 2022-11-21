@@ -194,7 +194,7 @@ header{
 /* contants start */
 
 .page_wrap{
-    padding: 60px 28px 140px;
+    padding: 0 28px;
   }
   .page_wrap.dp_wrap{
     background-color: #fff;
