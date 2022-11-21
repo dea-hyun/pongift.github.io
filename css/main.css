@@ -249,6 +249,7 @@ header{
    height: 70px; 
    padding-top: 2%;
    box-shadow: var(--box-shadow);
+   background: ver(--white);
 }
 #footer .footer_list{
     display: flex;
