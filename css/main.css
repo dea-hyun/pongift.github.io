@@ -196,6 +196,7 @@ header{
   }
   .swiper-container.contants_s1{
     height:230px;
+    overflow: hidden;
   }
   .swiper-slide.contants_s1{
     width:150px;
