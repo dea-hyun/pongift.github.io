@@ -10,6 +10,11 @@ header{
     border-radius: 0px 0px 30px 30px;
     position: relative;
 }
+.sub_tit{
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5% 0;
+}
 .Guest_bar{
     display: flex;
     flex-direction: row;
@@ -194,9 +199,16 @@ header{
   .contants_s1.wrap{
     position: relative;
   }
-  .swiper-container.contants_s1{
-    height:230px;
+  .swiper-container.contants_s{
+    height:170px;
     overflow: hidden;
+  }
+  .swiper-container.contants_s1{
+    height:260px;
+    overflow: hidden;
+  }
+  .swiper-slide.contants_s{
+   height:150px; 
   }
   .swiper-slide.contants_s1{
     width:150px;
@@ -324,6 +336,7 @@ header{
    padding-top: 2%;
    box-shadow: var(--box-shadow);
    background: ver(--white);
+   z-index: 100;
 }
 #footer .footer_list{
     display: flex;
