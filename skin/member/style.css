@@ -1,0 +1,104 @@
+*{
+    margin: 0 auto;
+}
+label{
+    display: none;
+}
+.head{
+    width: 100%;
+    line-height: 60px;
+    padding: 10%;
+}
+
+.head .login_tit{
+    text-align: center;
+    color:var(--black);
+    font-size: 20px;
+    line-height: 40px;
+}
+.head .login_tit>img{
+    float: right;
+}
+
+.log_img{
+    width: 100%;
+    padding: 20% 0;
+}
+.log_img >img{
+  display: block;
+  width: 127px;
+  margin: 0 auto;
+}
+
+.login_id {
+    margin:0 auto;
+    width: 80%;
+  }
+  
+  .login_id input {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: 1px solid lightgray;
+    outline: none;
+  }
+  
+  .login_pw {
+    margin:0 auto;
+    width: 80%;
+  }
+  
+  .login_pw input {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: 1px solid lightgray;
+    outline: none;
+  }
+  
+  .login_etc {
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .submit {
+    margin:0 auto;
+    width: 80%;
+  }
+  .submit input {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+  .forgot{
+    color:var(--black)
+  }
+  .forgot>ul{
+      float: left;
+      width: 100%;
+  }
+  .forgot>ul>li{
+    float: left;
+    width:33.333333%;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  .forgot>ul>li>span{
+    padding-left: 2px;
+  }
