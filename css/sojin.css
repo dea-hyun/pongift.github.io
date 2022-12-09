@@ -195,14 +195,10 @@
   font-weight: bold;
   font-size: 1.38em;
 }
-.prod_option table .addr_book{
-  padding-right: 20px;
-  background: url(../img/b_right_arrow.png) no-repeat right;
-
-}
-.prod_option table .plus_img{
-  padding-right: 20px;
-  background: url(../img/prod_plus.png) no-repeat right;
+.prod_option table .td_for_btn button{
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 15px;
 }
 .prod_option table .minus_img{
   background: url(../img/prod_minus.png) no-repeat right;
@@ -214,11 +210,10 @@
   border-radius: 30px;
   padding: 17px 0;
   margin-top: 38px;
-  font-size: 1.71em;
-  height: 60px;
-  line-height: 60px;
-  position: fixed;
-  background-color: #fff;
+  font-size: 1.42em;
+  height: 54px;
+  line-height: 24px;
+  /* position: fixed; */
   z-index: 1;
 }
 
@@ -248,13 +243,26 @@
 .od_cont table th{
   text-align: left;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px 0;
 }
 .od_cont table td{
   text-align: right;
 }
-  
+.od_cont table td.pdo_discount_price{
+  font-size: 18px;
+}
+table .btn_num_plmi{
+  width: 26px;
+  height: 26px;
+  border: 2px solid #605E5C;
+  color: #9F14FF;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 15px;
+  border-radius: 2px;
+}
+table #result{margin: 0 5px;}
 .pdo_for_border{  
   border-top: 1px solid #d9d9d9;
   padding: 0;
@@ -263,13 +271,13 @@
   float: left;
   padding: 10px 0;
   width: 70%;
-  font-size: 18px;
+  font-size: 16px;
 }
 .pdo_for_border li:last-child{
   width: 30%;
   text-align: right;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 20px;
 }
   
 .how_pay input[type="radio"]{
@@ -306,6 +314,35 @@
   font-weight: bold;
   margin: 0.8em 0 ;
 }
+
+
+@media screen and (max-width:396px) {
+  .page_wrap{
+    /* padding: 60px 15px 140px; */
+  }
+  .how_pay li{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .pay_agree_area{
+    font-size: 13px;
+  }
+  .od_cont table th{font-size: 12px;} 
+  .od_cont table .btn_num_plmi{width: 22px; height: 22px;}
+  .pdo_info .info_area h5{font-size: 1.3em;}
+  .pdo_info .info_area .pdo_period{font-size: 1.0em;}
+  .prod_option{padding: 18px 15px;}
+  .prod_option table .td_for_btn button{padding: 8px 10px;}
+}
+
+@media screen and (max-width:302px) {
+  .od_cont table colgroup col {width:100%;}
+  .od_cont table th, .od_cont table td {display: block; text-align: center; padding: 10px 0;}
+  .od_cont table th{background-color: #D9D9D9;}
+  .prod_option table .td_for_btn button{font-size: 10px;}
+  .prod_option table .pdo_all_price{font-size: 1.2em;}
+}
+
 /* 내쿠폰 */
 header.no_position{
   position: initial;
@@ -343,7 +380,7 @@ ul.tabs{
 ul.tabs li{
   float: left;
   color: #A19F9D;
-  padding: 20px 0 10px;
+  padding: 0 0 10px;
   cursor: pointer;
   width: 50%;
   text-align: center;
@@ -425,3 +462,49 @@ ul.tabs li.current{
   }
 }
 
+/* 공지사항 */
+.page_cont.notice{
+  padding: 20px 0 40px;
+}
+
+.acco_tit{
+  position: relative;
+  padding: 17px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+}
+.acco_tit h4{
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 18px;
+}
+.acco_tit p{
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.acco_cont {
+  display: none;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: #f4f4f2;
+  padding: 27px 15px;
+  transition: initial;
+}
+
+
+.arrow_area{
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/arrow_bottom.png) no-repeat 95% center;
+  /* background-size: 12px; */
+}
+.acco_tit.on .arrow_area{
+  transform: translateY(-70%) rotate(180deg);
+}
+/* 공지사항 */
