@@ -14,7 +14,6 @@
   <div class="mini_head">
     <span class="left_area"></span>
     상품상세
-    <span class="right_area"></span>
   </div>
   <div class="page_wrap dp_wrap">
     <div class="dp_img_wrap">
@@ -31,8 +30,8 @@
         <p>상품상세<br>[필수] 유효기간 및 환불안내</p>
       </div>
       <div class="buy_btn">
-        <button type="button" class="bg_purple_btn btn" id="prod_gift">선물하기</button>
-        <button type="button" class="bg_gray_btn btn">구매하기</button>
+        <button type="button" class="purple_btn btn" id="prod_gift">선물하기</button>
+        <button type="button" class="purple_btn btn">구매하기</button>
       </div>
     </div>
   </div>
@@ -74,19 +73,11 @@
         <th>받는사람</th>
         <td class="td_for_btn"><button class="purple_btn btn">주소록 ></button></td>
       </tr>
-      <tr>
-        <th>휴대폰 번호</th>
-        <td class="td_for_btn"><button class="purple_btn btn">추가 +</button></td>
-      </tr>
-      <tr>
-        <th>010-1234-1234</th>
-        <td class="minus_img"></td>
-      </tr>
-      <tr>
-        <th>010-1234-1234</th>
-        <td class="minus_img"></td>
-      </tr>
     </table>
+    <div class="clearfix addphone_area td_for_btn">
+      <p>휴대폰 번호</p>
+      <p class="td_for_btn"><button class="purple_btn btnAdd">추가 +</button></p>
+    </div>
     <a href="order_detail.html" class="bg_purple_btn btn go_gift">선물하기</a>
   </div>
 
@@ -118,6 +109,20 @@
       // 결과 출력
       resultElement.innerText = number;
     }
+  </script>
+  <script>
+    $(document).ready (function () {                
+    $('.btnAdd').click (function () {                                        
+      $('.addphone_area').append (                        
+          '<input type="text" name="txt"> <input type="button" class="btnRemove minus_img" ><br>'                    
+      ); // end append                            
+      $('.btnRemove').on('click', function () { 
+        $(this).prev().remove (); // remove the textbox
+        $(this).next ().remove (); // remove the <br>
+        $(this).remove (); // remove the button
+      });
+      }); // end click                                            
+    }); // end ready
   </script>
 </body>
 </html>
