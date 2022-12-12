@@ -27,7 +27,7 @@
   background: url(../img/head_closed.png) no-repeat center;
 }
 .page_wrap{
-  padding: 60px 28px 140px;
+  padding: 60px 28px;
 }
 .page_wrap.dp_wrap{
   background-color: #fff;
@@ -73,8 +73,8 @@
 }
 .prod_price .price_after span{
   font-size: 0.84em;
-  color: #3D3D3D;
-  font-weight: 300;
+  color: #FF0505;
+  font-weight: 600;
   margin-right: 10px;
 }
 .prod_detail{
@@ -102,7 +102,7 @@
   border-radius: 30px;
   width: 47%;
 }
-.buy_btn .bg_gray_btn{margin-left: 3%;}
+.buy_btn button:last-child{margin-left: 3%;}
 
 .option_bg{
   width: 100%;
@@ -195,13 +195,10 @@
   font-weight: bold;
   font-size: 1.38em;
 }
-.prod_option table .td_for_btn button{
+.prod_option .td_for_btn button{
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 15px;
-}
-.prod_option table .minus_img{
-  background: url(../img/prod_minus.png) no-repeat right;
 }
 .prod_option .go_gift{
   display: block;
@@ -315,15 +312,33 @@ table #result{margin: 0 5px;}
   margin: 0.8em 0 ;
 }
 
+.addphone_area{
+  padding: 0;
+  font-weight: bold;
+  line-height: 50px;
+}
+.addphone_area p{
+  float: left;
+  width: 50%;
+
+  font-size: 16px;
+}
+.addphone_area p.td_for_btn{
+  text-align: right;  
+}
+.addphone_area input[type="text"]{
+  border-bottom: 1px solid #ccc;
+  width: 78%;
+  margin-right: 1%;
+}
+.addphone_area .minus_img{
+  width: 20%;
+  padding: 10px 0;
+  vertical-align: middle;
+  background: url(../img/prod_minus.png) no-repeat 80%;
+}
 
 @media screen and (max-width:396px) {
-  .page_wrap{
-    /* padding: 60px 15px 140px; */
-  }
-  .how_pay li{
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .pay_agree_area{
     font-size: 13px;
   }
@@ -332,14 +347,21 @@ table #result{margin: 0 5px;}
   .pdo_info .info_area h5{font-size: 1.3em;}
   .pdo_info .info_area .pdo_period{font-size: 1.0em;}
   .prod_option{padding: 18px 15px;}
-  .prod_option table .td_for_btn button{padding: 8px 10px;}
+  .prod_option .td_for_btn button{padding: 8px 10px;}
+}
+
+@media screen and (max-width:360px) {
+  .how_pay li{
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width:302px) {
   .od_cont table colgroup col {width:100%;}
   .od_cont table th, .od_cont table td {display: block; text-align: center; padding: 10px 0;}
   .od_cont table th{background-color: #D9D9D9;}
-  .prod_option table .td_for_btn button{font-size: 10px;}
+  .prod_option .td_for_btn button{font-size: 10px;}
   .prod_option table .pdo_all_price{font-size: 1.2em;}
 }
 
@@ -409,19 +431,24 @@ ul.tabs li.current{
   background-color: #fff;
   border-radius: 30px 30px 0px 0px;
 }
+.mc_info {
+  color: #AAACAE;
+  font-size: 15px;
+}
 .my_coupon_info{
   margin-top: 20px;
   position: relative;
 }
 .my_coupon_info p{
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: #605E5C;
   text-align: center;
   font-size: 15px;
   padding: 17px 0;
   border-radius: 9px;
   position: absolute;
   animation: bounce 1s linear 0s infinite alternate;
+  color: #fff;
 }
 .my_coupon_info p::before{
   content: '';
@@ -429,10 +456,10 @@ ul.tabs li.current{
   height: 18px;
   display: block;
   position: absolute;
-  bottom: -10px;
+  bottom: -13px;
   left: 50%;
   transform: rotate(45deg) translateX(-50%);
-  background-color: #d9d9d9;
+  background-color: #605E5C;;
 }
 .my_coupon_info .closed_wrap{
   padding-top: 80px;
