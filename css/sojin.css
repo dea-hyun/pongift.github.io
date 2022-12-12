@@ -472,7 +472,7 @@ ul.tabs li.current{
   padding: 17px 15px;
   cursor: pointer;
   font-size: 14px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #EDEBE9;
 }
 .acco_tit h4{
   margin-bottom: 10px;
@@ -507,4 +507,5 @@ ul.tabs li.current{
 .acco_tit.on .arrow_area{
   transform: translateY(-70%) rotate(180deg);
 }
+.no_background{background:inherit;}
 /* 공지사항 */
