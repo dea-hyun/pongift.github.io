@@ -96,7 +96,7 @@ header{
     top: 112px;
 }
 .nav .nav_bar{
-    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -124,6 +124,7 @@ header{
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin: 0 auto;
 }
 .nav .nav_bar li .dot{
     display: block;
@@ -350,20 +351,19 @@ header{
   overflow: hidden;
 }
 .store_s1.contants_s1{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 5px;
   align-items: center;
 }
 
 .store_s1.list{
-  width:161px;
- height:239px;
+width: 47%;
  border: 1px solid var(--light-gray);
- border-radius: 15px;
+ border-radius: 5px;
  padding: 5px;
- margin:5px 0;
+ margin:5px 4px;
 }
 .store_s1.list img{
   width: 150px;
@@ -401,7 +401,22 @@ header{
 .contants_s1.txt>h3{
   font-size: 16px;
 }
-
+.swiper-wrapper.nav_contants_list{
+  overflow: hidden;
+}
+.swiper-slide.list{
+  padding: 0 10px;
+  width: auto;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 200;
+}
+.swiper-slide.list:active{
+  font-weight: bold;
+}
+.swiper-container.store{
+  margin-top: 30px;
+}
 /*store.html end*/
 
 

@@ -46,12 +46,50 @@
                         <div class="container">
                            <ul class="nav_bar">
                               <li>홈</li>
-                              <li class="dot"><span id="foo"></span></li>
                               <li>스토어</li>
                            </ul>
+                           <div class="swiper-container store">
+                           <ul class="swiper-wrapper nav_contants_list">
+                              <li class="swiper-slide list">커피</li>
+                              <li class="swiper-slide list">치킨</li>
+                              <li class="swiper-slide list">베이커리</li>
+                              <li class="swiper-slide list">아이스크림</li>
+                              <li class="swiper-slide list">케익</li>
+                              <li class="swiper-slide list">마카롱</li>
+                              <li class="swiper-slide list">도넛</li>
+                              <li class="swiper-slide list">돈까스</li>
+                         </ul>
+                        </div>
                         </div>
                      </div>
+                 <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
                         <!-- <script>
                               var f = document.getElementById('foo');
                               document.addEventListener('click' , function(ev){
