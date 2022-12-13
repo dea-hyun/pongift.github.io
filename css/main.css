@@ -109,7 +109,7 @@ header{
     flex-grow: 0;
 }
 .nav .nav_bar li{
-    height: 24px;
+    height: 20px;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
@@ -130,6 +130,8 @@ header{
     width: 100px;
 }
 
+
+/*index.html start*/
 #foo{
     border-radius:50px;
     width:5px;
@@ -337,9 +339,70 @@ header{
 
   }
 /* contants end*/
+/*index.html end*/
 
+/*store.html start*/
+.store.contants_s1.wrap{
+  position: relative;
+}
 
+.store.contants_s1{
+  overflow: hidden;
+}
+.store_s1.contants_s1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.store_s1.list{
+  width:161px;
+ height:239px;
+ border: 1px solid var(--light-gray);
+ border-radius: 15px;
+ padding: 5px;
+ margin:5px 0;
+}
+.store_s1.list img{
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+.contants_s1.txt{
+  padding: 10px 0;
+}
+.contants_s1.txt>li:nth-child(1){
+  font-size: 13px;
+  font-weight: 200;
+}
+.contants_s1.txt>li:nth-child(2){
+  font-size: 16px;
+  font-weight: bold;
+}
+.contants_s1.txt>li:nth-child(3){
+  padding: 7% 0;
+  font-weight: bold;
+}
+.contants_s1.txt>li:nth-child(3)>span{
+  color: var(--red);
+  padding-right: 5px;
+}
+.contants_s1.txt>p{
+  font-size:14px;
+  color: var(--light-gray);
+  padding: 5% 0;
+  font-weight: bold;
+}
+.contants_s1.txt>p>span{
+  color:var(--red);
+}
+.contants_s1.txt>h3{
+  font-size: 16px;
+}
+
+/*store.html end*/
 
 
 
