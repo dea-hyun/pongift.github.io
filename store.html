@@ -17,7 +17,7 @@
                            xhttp.onreadystatechange = function () {
                               if (this.readyState == 4 && this.status == 200) {
                                     el.outerHTML = this.responseText;
-                              }
+                              }           
                            };
                            xhttp.open('GET', includePath, true);
                            xhttp.send();
@@ -51,6 +51,7 @@
                            </ul>
                         </div>
                      </div>
+
                         <!-- <script>
                               var f = document.getElementById('foo');
                               document.addEventListener('click' , function(ev){
@@ -65,44 +66,13 @@
             <!-- slider stert -->
             <!-- Swiper -->
             <div class="container">
-            <div id="main_swiper">
-               <div class="main swiper mySwiper">
-                  <div class="main swiper-wrapper">
-                  <div class="main swiper-slide"><img src="img/main_slide01.png"></div>
-                  <div class="main swiper-slide"><img src="img/main_slide02.png"></div>
-                  <div class="main swiper-slide"><img src="img/main_slide03.png"></div>
-                  </div>
-                  <!-- <div class="main swiper-button-next"></div>
-                  <div class="main swiper-button-prev"></div> -->
-                  <div class="main swiper-pagination"></div>
-               </div>
-            </div>
+
                <!-- Swiper JS -->
                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
                <!-- Initialize Swiper -->
                <script>
-                  var swiper = new Swiper(".mySwiper", {
-                  spaceBetween: 70,
-                  slidesPerView:'auto',
-                  centeredSlides: true,
-                  // autoplay: {
-                  //    delay: 2500,
-                  //    disableOnInteraction: false,
-                  // },
-                  loop:true,//슬라이드반복여부
-                  loopAdditionalSlides:1,
-                  pagination: {
-                     el: ".swiper-pagination",
-                     type: "fraction",
-                  },
-                  navigation: {
-                     nextEl: ".swiper-button-next",
-                     prevEl: ".swiper-button-prev",
-                  },
-                  });
-                   </script>
-            </div>
+ 
          </section>
             <!-- slider end -->
 
@@ -179,10 +149,9 @@
          <div class="swiper-pagination contants_s1 wrap ">
             <div class="swiper-container contants_s1">
              <div class="container">
-              <h5 class="sub_tit" style="float:left">이달의 핫이슈</h5>
+              <h5 class="sub_tit" >이달의 핫이슈</h5>
              </div> 
-              <div class="swiper-wrapper contants_s1" style="transform: translate3d(-411.5px, 0px, 0px);
-              transition-duration: 0ms;">
+              <div class="swiper-wrapper contants_s1">
                   <div class="swiper-slide contants_s1">
                      <img src="img/main_slide04.png">
                      <div class="contants_s1 txt">
@@ -218,29 +187,7 @@
          <!-- <div class="swiper-scrollbar"></div> -->
      
          <script>
-            var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        centeredSlides: true, 
-        effect: 'coverflow',
-        initialSlide: 1,
-        grabCursor: true,
-        centeredSlides: true,
-        //slidesPerView: 1,
-        slidesPerView: 'auto',
-        loop : true,
-        //loopedSlides: 0,
-        //loopAdditionalSlides: 0,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        coverflow: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : false
-        }
-    });
+
          </script>
          <!-- contants_s1 slider end -->
 
@@ -255,83 +202,7 @@
                 <div class="swiper-slide contants_s2"><a href="#"><span class="text">5만원이상</span></a></div>
             </div>
         </div>
-        <div class="page_wrap ">
-         <div class="od_wrap">
-           <h5 class="sub_tit">주문상품정보</h5>
-           <div class="od_cont">
-             <div class="pdo_info">
-               <ul>
-                 <li>
-                   <div class="img_area">
-                    <img src="img/img_01.png">
-                   </div>
-                 </li>
-                 <li class="info_area">
-                   <p class="pdo_brand">스타벅스(브랜드명)</p>
-                   <h5>아메리카노 Tall Size</h5>
-                   <p class="pdo_period">2023.01.09 (유효기간)</p>
-                 </li>
-               </ul>
-             </div>
-             <div class="pdo_info">
-              <ul>
-                <li>
-                  <div class="img_area">
-                    <img src="img/img_01.png">
-                  </div>
-                </li>
-                <li class="info_area">
-                  <p class="pdo_brand">스타벅스(브랜드명)</p>
-                  <h5>아메리카노 Tall Size</h5>
-                  <p class="pdo_period">2023.01.09 (유효기간)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="pdo_info">
-              <ul>
-                <li>
-                  <div class="img_area">
-                    <img src="img/img_01.png">
-                  </div>
-                </li>
-                <li class="info_area">
-                  <p class="pdo_brand">스타벅스(브랜드명)</p>
-                  <h5>아메리카노 Tall Size</h5>
-                  <p class="pdo_period">2023.01.09 (유효기간)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="pdo_info">
-              <ul>
-                <li>
-                  <div class="img_area">
-                    <img src="img/img_01.png">
-                  </div>
-                </li>
-                <li class="info_area">
-                  <p class="pdo_brand">스타벅스(브랜드명)</p>
-                  <h5>아메리카노 Tall Size</h5>
-                  <p class="pdo_period">2023.01.09 (유효기간)</p>
-                </li>
-              </ul>
-            </div>
-            <div class="pdo_info">
-              <ul>
-                <li>
-                  <div class="img_area">
-                    <img src="img/img_01.png">
-                  </div>
-                </li>
-                <li class="info_area">
-                  <p class="pdo_brand">스타벅스(브랜드명)</p>
-                  <h5>아메리카노 Tall Size</h5>
-                  <p class="pdo_period">2023.01.09 (유효기간)</p>
-                </li>
-              </ul>
-            </div>
-             <button class="page_wrap_button active">더보기</button>
-         </div>
-         </div>
+   
         <script>
           var swiper = new Swiper('.snbSwiper', {
             slidesPerView: 'auto',
