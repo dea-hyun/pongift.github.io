@@ -167,6 +167,19 @@
   padding: 5px 20px;
   box-shadow: 2px 1px 5px -2px #000;
 }
+.pdo_info ul .img_area{
+  border-radius: 15px;
+  position: relative;
+}
+.pdo_info ul .img_area .dday_coupon{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 15px 0px 0px 0px;
+  left: 0;
+  padding: 4px 12px;
+  font-weight: bold;
+  box-shadow: 1px 3px 8px -3px #000;
+}
 .pdo_info .info_area .pdo_brand{
   font-size: 0.86em;
 }
@@ -195,10 +208,24 @@
   font-weight: bold;
   font-size: 1.38em;
 }
+<<<<<<< HEAD
 .prod_option .td_for_btn button{
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 15px;
+=======
+.prod_option table .addr_book{
+  padding-right: 20px;
+  background: url(../img/b_right_arrow.png) no-repeat right;
+
+}
+.prod_option table .plus_img{
+  padding-right: 20px;
+  background: url(../img/prod_plus.png) no-repeat right;
+}
+.prod_option table .minus_img{
+  background: url(../img/prod_minus.png) no-repeat right;
+>>>>>>> 10d77fe (my_coupon 작업)
 }
 .prod_option .go_gift{
   display: block;
@@ -207,11 +234,14 @@
   border-radius: 30px;
   padding: 17px 0;
   margin-top: 38px;
+<<<<<<< HEAD
   font-size: 1.42em;
   height: 54px;
   line-height: 24px;
   /* position: fixed; */
   z-index: 1;
+=======
+>>>>>>> 10d77fe (my_coupon 작업)
 }
 
 .page_wrap.od{
@@ -240,7 +270,11 @@
 .od_cont table th{
   text-align: left;
   font-weight: normal;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 18px;
+>>>>>>> 10d77fe (my_coupon 작업)
   padding: 5px 0;
 }
 .od_cont table td{
@@ -268,13 +302,21 @@ table #result{margin: 0 5px;}
   float: left;
   padding: 10px 0;
   width: 70%;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 18px;
+>>>>>>> 10d77fe (my_coupon 작업)
 }
 .pdo_for_border li:last-child{
   width: 30%;
   text-align: right;
   font-weight: bold;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+  font-size: 28px;
+>>>>>>> 10d77fe (my_coupon 작업)
 }
   
 .how_pay input[type="radio"]{
@@ -300,6 +342,7 @@ table #result{margin: 0 5px;}
 .how_pay input[type="radio"]:checked + label{
   border: 1px solid #9F14FF ;
   color: #9F14FF;
+<<<<<<< HEAD
 }
   
 .pay_agree_area{
@@ -365,6 +408,20 @@ table #result{margin: 0 5px;}
   .prod_option table .pdo_all_price{font-size: 1.2em;}
 }
 
+=======
+}
+
+.pay_agree_area{
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.cont_tit{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.8em 0 ;
+}
+>>>>>>> 10d77fe (my_coupon 작업)
 /* 내쿠폰 */
 header.no_position{
   position: initial;
@@ -394,6 +451,7 @@ header.no_position{
   right: 28px;
   background: url(../img/head_closed_white.png) no-repeat;
 }
+<<<<<<< HEAD
 ul.tabs{
   margin: 0px;
   padding: 0px;
@@ -423,6 +481,9 @@ ul.tabs li.current{
 .tab-content.current{
   display: inherit;
 }
+=======
+
+>>>>>>> 10d77fe (my_coupon 작업)
 .page_cont{
   width: 92%;
   padding: 20px 15px 40px;
@@ -431,24 +492,34 @@ ul.tabs li.current{
   background-color: #fff;
   border-radius: 30px 30px 0px 0px;
 }
+<<<<<<< HEAD
 .mc_info {
   color: #AAACAE;
   font-size: 15px;
 }
+=======
+>>>>>>> 10d77fe (my_coupon 작업)
 .my_coupon_info{
   margin-top: 20px;
   position: relative;
 }
 .my_coupon_info p{
   width: 100%;
+<<<<<<< HEAD
   background-color: #605E5C;
+=======
+  background-color: #d9d9d9;
+>>>>>>> 10d77fe (my_coupon 작업)
   text-align: center;
   font-size: 15px;
   padding: 17px 0;
   border-radius: 9px;
   position: absolute;
   animation: bounce 1s linear 0s infinite alternate;
+<<<<<<< HEAD
   color: #fff;
+=======
+>>>>>>> 10d77fe (my_coupon 작업)
 }
 .my_coupon_info p::before{
   content: '';
@@ -456,10 +527,17 @@ ul.tabs li.current{
   height: 18px;
   display: block;
   position: absolute;
+<<<<<<< HEAD
   bottom: -13px;
   left: 50%;
   transform: rotate(45deg) translateX(-50%);
   background-color: #605E5C;;
+=======
+  bottom: -10px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  background-color: #d9d9d9;
+>>>>>>> 10d77fe (my_coupon 작업)
 }
 .my_coupon_info .closed_wrap{
   padding-top: 80px;
@@ -487,6 +565,7 @@ ul.tabs li.current{
   100% {
    top: 20px;
   }
+<<<<<<< HEAD
 }
 
 /* 공지사항 */
@@ -536,3 +615,6 @@ ul.tabs li.current{
 }
 .no_background{background:inherit;}
 /* 공지사항 */
+=======
+}
+>>>>>>> 10d77fe (my_coupon 작업)
