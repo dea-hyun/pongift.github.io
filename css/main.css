@@ -354,8 +354,9 @@ header{
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5px;
+  margin-top: 5px;
   align-items: center;
+
 }
 
 .store_s1.list{
