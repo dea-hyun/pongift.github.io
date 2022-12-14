@@ -205,7 +205,7 @@ input::placeholder {
  #birthday{
   display: inline-block;
   width: 69%;
-  border-bottom: 0px solid var(--light-gray);
+
   vertical-align:middle;
  }
  #join_form .form-group .id_btn, .c_number_btn{
