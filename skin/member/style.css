@@ -25,9 +25,8 @@ input::placeholder {
 
 /*login_skin start*/
 .head{
-    width: 100%;
-    line-height: 60px;
-    padding:2% 10%;
+  line-height: 60px;
+  padding: 2% 5%;
 }
 
 .head .login_tit{
@@ -81,14 +80,13 @@ input::placeholder {
   }
   
   .login_etc {
-    margin: 0 auto;
-    padding: 10px;
-    width: 80%;
     font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-weight: bold;
+  }
+  .login_etc li {
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: middle;
   }
   
   .submit {
@@ -113,6 +111,7 @@ input::placeholder {
       width: 100%;
   }
   .forgot>ul{
+      list-style: none;
       float: left;
       padding: 0 13%;
       width: 100%;
@@ -157,7 +156,7 @@ input::placeholder {
   width: 40px;
   left: 45%;
   top:17%;
-  background: #eee;
+  background: white;
   text-align: center;
   z-index: 10;
   color:var(--dark-gray)
