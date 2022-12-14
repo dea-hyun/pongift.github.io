@@ -204,7 +204,6 @@ input::placeholder {
  #c_number,
  #birthday{
   display: inline-block;
-  background: #eee;
   width: 69%;
   border-bottom: 1px solid var(--light-gray);
   vertical-align:middle;
