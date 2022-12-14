@@ -419,7 +419,28 @@ width: 47%;
 }
 /*store.html end*/
 
-
+/*splash.html start*/
+.splash_area{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.splash_area img{
+  width: 400px;
+  position:absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.splash_txt{
+  position: absolute;
+  bottom: 10%;
+  font-size: 55px;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+}
+/*splash.html end*/
 
 
 
