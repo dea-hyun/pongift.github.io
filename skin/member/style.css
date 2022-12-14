@@ -85,6 +85,8 @@ input::placeholder {
   .login_etc {
     font-size: 14px;
     font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
   }
   .login_etc li {
     display: inline-block;
