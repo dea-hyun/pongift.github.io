@@ -116,9 +116,10 @@ input::placeholder {
       width: 100%;
   }
   .forgot>ul{
-      list-style: none;
-      float: left;
-      padding: 0 13%;
+    list-style: none;
+    float: left;
+    padding: 0px 5%;
+    width: 90%;
   }
   .forgot>ul>li{
     float: left;
