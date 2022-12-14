@@ -371,6 +371,7 @@ width: 47%;
   border-radius: 15px;
 }
 .contants_s1.txt{
+  text-align: left;
   padding: 10px 0;
 }
 .contants_s1.txt>li:nth-child(1){
