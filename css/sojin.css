@@ -221,7 +221,7 @@
   border-radius: 50px;
   font-size: 15px;
 }
-.go_gift{
+.bg_purple_btn.btn.go_gift{
   position: fixed;
   bottom: 141px;
   display: block;
