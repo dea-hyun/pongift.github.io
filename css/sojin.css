@@ -145,6 +145,9 @@
 .prod_option_wrap{
   padding: 18px 28px;
 }
+.button_box{
+  padding: 0 5%;
+}
 .option_bg.active, .prod_option.active{display: block;}
 .prod_option h4{
   font-size: 1.71em;
