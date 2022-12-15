@@ -131,7 +131,7 @@
   display: none;
 }
 .prod_option_wrap{
-  width: 100%s;
+  width: 100%;
 }
 .prod_option{
   width: 100%;
@@ -234,7 +234,7 @@
   height: 54px;
   line-height: 24px;
   /* position: fixed; */
-  z-index: 1;
+  z-index: 13;
 }
 
 .page_wrap.od{
