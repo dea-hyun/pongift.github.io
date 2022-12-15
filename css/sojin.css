@@ -145,8 +145,7 @@
 .prod_option_wrap{
   padding: 18px 28px;
 }
-.button_box{
-}
+
 .option_bg.active, .prod_option.active{display: block;}
 .prod_option h4{
   font-size: 1.71em;
@@ -226,10 +225,11 @@
 }
 .bg_purple_btn.btn.go_gift{
   position: fixed;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   bottom: 141px;
   display: block;
-  width: 100%;
+  width: 334px;
   text-align: center;
   border-radius: 30px;
   padding: 17px 0;
