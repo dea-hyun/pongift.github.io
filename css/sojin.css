@@ -223,6 +223,12 @@
   border-radius: 50px;
   font-size: 15px;
 }
+.prod_option .td_for_btn_minus{
+  width: 50%;
+}
+.prod_option .td_for_btn_minus img{
+  float: right;
+}
 .bg_purple_btn.btn.go_gift{
   position: fixed;
   left: 50%;
