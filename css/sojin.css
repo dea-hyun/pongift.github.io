@@ -229,11 +229,9 @@
   text-align: center;
   border-radius: 30px;
   padding: 17px 0;
-  margin-top: 38px;
   font-size: 1.42em;
   height: 54px;
   line-height: 24px;
-  /* position: fixed; */
   z-index: 13;
 }
 
