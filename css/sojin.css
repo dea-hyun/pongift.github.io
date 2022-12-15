@@ -42,6 +42,23 @@
   margin-top: 26px;
   position: relative;
 }
+.prod_info .btn_area{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.prod_info .btn_area span{
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+.prod_info .btn_area .heart{
+  background: url(../img/heart.png) no-repeat;
+  margin-right: 10px;
+}
+.prod_info .btn_area .share{
+  background: url(../img/share.png) no-repeat;
+}
 .prod_info .brand_name{
   font-weight: 100;
   font-size: 1.43em;
