@@ -4,7 +4,7 @@
 ul li{
   list-style: none;
 }
-label{
+label:not(.no_hide){
     display: none;
 }
 input {
@@ -211,22 +211,32 @@ input::placeholder {
  #join_form .form-group .id_btn, .c_number_btn{
   width: 29%;
   display: inline-block;
-  border: 1px solid var(--purple);
-  color: var(--purple);
-  padding: 13px 0;;
   border-radius: 30px;
+  font-weight: bold;
  }
+ #birthday{width: 60%;}
  #join_form .form-group .birthday_btn{
-  width: 14%;
+  width: 18%;
   display: inline-block;
   border: 1px solid var(--light-gray);
   color: var(--light-gray);
-  padding: 13px 0;;
+  padding: 10px 0;
   border-radius: 30px;
+  background-color: transparent;
  }
 
-
-
-
+#join_form input:not(input[type="checkbox"]){
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 16px;
+}
+select.purple_btn{
+  width: 29%;
+  border-radius: 30px;
+  padding: 10px;
+}
+.no_hide{display:block; margin-top: 10px;}
+.no_hide input{width: inherit;}
+.form-group .bg_gray_btn{width: 100%; font-size: 16px; font-weight: bold; color: #605E5C;}
 
  /*register_skin start*/

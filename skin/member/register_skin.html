@@ -1,14 +1,16 @@
-<html>
-    <html lang="ko" id="html_wrap">
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="/css/default.css">
-      <link rel="stylesheet" href="/css/style.css">
-
-      <!-- <script src="./js/main.js" type="module"></script> -->
-      <body>
+<!DOCTYPE html>
+<html lang="ko" id="html_wrap">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/sojin.css">
+  </head>
+<!-- <script src="./js/main.js" type="module"></script> -->
+<body class="no_background">
     <!-- header start-->   
           <div class="head">
             <h3 class="login_tit">회원가입
@@ -25,7 +27,7 @@
             </label>
              <div>
                 <input type="text" name="user_id" id="user_id" placeholder="아이디(한글/영문/숫자)"/>
-                <button type="button" class="id_btn">중복확인</button>
+                <button type="button" class="id_btn purple_btn">중복확인</button>
             </div>
         </div>
        <div class="form-group">
@@ -49,7 +51,7 @@
             생년월일 <span class="identify">*</span>
           </label>
           <div>
-              <input type="text" name="birthday" id="birthday"placeholder="생년월일"/>
+              <input type="text" name="birthday" id="birthday"placeholder="생년월일 (ex 891227)"/>
               <button type="button" class="birthday_btn">남자</button>
               <button type="button" class="birthday_btn">여자</button>
           </div> 
@@ -60,7 +62,7 @@
             </label>
             <div>
                 <input type="text" name="tel" id="tel"placeholder="휴대폰 번호-없이 입력"/>
-                <button type="button"  class="c_number_btn">인증요청</button>
+                <select name="" id="" class="purple_btn"><option value="">skt</option></select>
             </div> 
         </div>
         <div class="form-group">
@@ -70,12 +72,16 @@
             </label>
             <div>
                 <input type="text" name="" id="c_number"placeholder="인증번호"/>
-                <button type="button"  class="c_number_btn">인증요청</button>
+                <button type="button"  class="c_number_btn purple_btn">인증요청</button>
             </div>
+            <label for="identi_verifca" class="no_hide">
+              <input type="checkbox" name="" id="identi_verifca" class="custom_chk">
+              [필수] 휴대폰 본인 인증 서비스
+            </label>
         </div> 
         <div class="form-group">
             <div>
-                <button type="submit">가입하기</button>	
+                <button type="submit" class="bg_gray_btn">가입하기</button>	
             </div>
         </div>   
    <!-- form end -->
@@ -92,6 +98,6 @@
 
         </div>
             </form> 
-    </body>
+</body>
 </html>
           
