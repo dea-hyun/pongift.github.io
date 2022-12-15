@@ -20,6 +20,10 @@
       <img src="img/dp_prod_img.png" alt="">
     </div>
     <div class="prod_info">
+      <div class="btn_area">
+        <span class="heart"></span>
+        <span class="share"></span>
+      </div>
       <p class="brand_name">스타벅스</p>
       <h4>아메리카노 Tall Size</h4>
       <div class="prod_price">
@@ -80,6 +84,27 @@
     </div>
     <a href="order_detail.html" class="bg_purple_btn btn go_gift">선물하기</a>
   </div>
+    <!-- footer start-->
+    <div data-include-path="footer.html"></div>
+    <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+  <!-- footer end-->
 
   <script>
     $('#prod_gift').on('click',function(){
