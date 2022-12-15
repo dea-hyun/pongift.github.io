@@ -219,8 +219,10 @@
   font-size: 15px;
 }
 .prod_option .go_gift{
+  position: fixed;
+  bottom: 141px;
   display: block;
-  width: 100%;
+  width: 90%;
   text-align: center;
   border-radius: 30px;
   padding: 17px 0;
