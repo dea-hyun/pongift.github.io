@@ -228,6 +228,7 @@
 }
 .prod_option .td_for_btn_minus img{
   float: right;
+  padding: 5%;
 }
 .bg_purple_btn.btn.go_gift{
   position: fixed;
