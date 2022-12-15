@@ -227,6 +227,7 @@
 }
 .bg_purple_btn.btn.go_gift{
   position: fixed;
+  left: 0;
   bottom: 141px;
   display: block;
   width: 100%;
@@ -235,7 +236,7 @@
   padding: 17px 0;
   font-size: 1.42em;
   height: 54px;
-  line-height: 24px;
+  /* line-height: 24px; */
   z-index: 13;
 }
 
