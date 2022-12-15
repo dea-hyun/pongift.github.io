@@ -461,7 +461,8 @@ width: 47%;
 }
 #footer .bob_code{
   position: absolute;
-  left: 43%;
+  left: 50%;
+  transform: translate(-50%);
   top:-25px;
   /* transition: translate(-43%); */
   width: 60px;
